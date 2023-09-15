@@ -47,7 +47,7 @@
             </li>
           </ul>
         </nav>
-        <address class="address-style address-container">
+        <address class="address-style">
           <ul class="list-address">
             <li>
               <a class="link" href="mailto:info@devstudio.com"
@@ -59,6 +59,11 @@
             </li>
           </ul>
         </address>
+        <button class="menu-button">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -71,9 +76,9 @@
       </section>
       <!--Info-->
       <section class="info-section">
-        <div class="container">
+        <div class="info-container container">
           <h2 class="visually-hidden">content</h2>
-          <ul class="info-container">
+          <ul class="info-list">
             <li class="info-item">
               <div class="info-icon">
                 <svg width="64" height="64">
@@ -81,7 +86,7 @@
                 </svg>
               </div>
               <h3 class="title-three info-title">Strategy</h3>
-              <p class="text">
+              <p class="text info-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -93,7 +98,7 @@
                 </svg>
               </div>
               <h3 class="title-three info-title">Punctuality</h3>
-              <p class="text">
+              <p class="text info-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -105,7 +110,7 @@
                 </svg>
               </div>
               <h3 class="title-three info-title">Diligence</h3>
-              <p class="text">
+              <p class="text info-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
@@ -117,7 +122,7 @@
                 </svg>
               </div>
               <h3 class="title-three info-title">Technologies</h3>
-              <p class="text">
+              <p class="text info-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -132,6 +137,7 @@
           <ul class="team-list">
             <li class="mini-item team-item">
               <img
+                srcset="./images/profile-photo/mark-guerrero-photo@2x.jpg 2x"
                 src="./images/profile-photo/mark-guerrero-photo.jpg"
                 alt="Mark Guerrero Photo"
                 width="264"
@@ -173,6 +179,7 @@
             </li>
             <li class="mini-item team-item">
               <img
+                srcset="./images/profile-photo/tom-ford-photo@2x.jpg 2x"
                 src="./images/profile-photo/tom-ford-photo.jpg"
                 alt="Tom Ford Photo"
                 width="264"
@@ -214,6 +221,7 @@
             </li>
             <li class="mini-item team-item">
               <img
+                srcset="./images/profile-photo/camila-garcia-photo@2x.jpg 2x"
                 src="./images/profile-photo/camila-garcia-photo.jpg"
                 alt="Camila Garcia Photo"
                 width="264"
@@ -255,6 +263,7 @@
             </li>
             <li class="mini-item team-item">
               <img
+                srcset="./images/profile-photo/daniel-wilson-photo@2x.jpg 2x"
                 src="./images/profile-photo/daniel-wilson-photo.jpg"
                 alt="Daniel Wilson Photo"
                 width="264"
@@ -299,15 +308,20 @@
       </section>
       <!--Portfolio-->
       <section class="portfolio-section">
-        <div class="container">
+        <div class="container portfolio-container">
           <h2 class="title-two portfolio-title">Our Profile</h2>
-          <ul class="portfolio-container">
+          <ul class="portfolio-list">
             <li class="mini-item card">
               <div class="dop-info-conteiner">
                 <img
+                  srcset="
+                    ./images/portfolio-img/mobile-banking-app.jpg        360w,
+                    ./images/portfolio-img/mobile-banking-app-tablet.jpg 356w,
+                    ./images/portfolio-img/mobile-banking-app-mobile.jpg 288w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   src="./images/portfolio-img/mobile-banking-app.jpg"
                   alt="mobile banking app"
-                  width="360"
                 />
                 <p class="dop-info text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -324,9 +338,14 @@
             <li class="mini-item card">
               <div class="dop-info-conteiner">
                 <img
+                  srcset="
+                    ./images/portfolio-img/mobile-scan-app.jpg        360w,
+                    ./images/portfolio-img/mobile-scan-app-tablet.jpg 356w,
+                    ./images/portfolio-img/mobile-scan-app-mobile.jpg 288w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   src="./images/portfolio-img/mobile-scan-app.jpg"
                   alt="mobile scan app"
-                  width="360"
                 />
                 <p class="dop-info text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -342,9 +361,14 @@
             <li class="mini-item card">
               <div class="dop-info-conteiner">
                 <img
+                  srcset="
+                    ./images/portfolio-img/preview-meditation-app.jpg        360w,
+                    ./images/portfolio-img/preview-meditation-app-tablet.jpg 356w,
+                    ./images/portfolio-img/preview-meditation-app-mobile.jpg 288w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   src="./images/portfolio-img/preview-meditation-app.jpg"
                   alt="preview meditation app"
-                  width="360"
                 />
                 <p class="dop-info text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -361,9 +385,14 @@
             <li class="mini-item card">
               <div class="dop-info-conteiner">
                 <img
+                  srcset="
+                    ./images/portfolio-img/taxi-driving.jpg        360w,
+                    ./images/portfolio-img/taxi-driving-tablet.jpg 356w,
+                    ./images/portfolio-img/taxi-driving-mobile.jpg 288w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   src="./images/portfolio-img/taxi-driving.jpg"
                   alt="taxi driving"
-                  width="360"
                 />
                 <p class="dop-info text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -380,9 +409,14 @@
             <li class="mini-item card">
               <div class="dop-info-conteiner">
                 <img
+                  srcset="
+                    ./images/portfolio-img/phone-background.jpg        360w,
+                    ./images/portfolio-img/phone-background-tablet.jpg 356w,
+                    ./images/portfolio-img/phone-background-mobile.jpg 288w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   src="./images/portfolio-img/phone-background.jpg"
                   alt="phone background"
-                  width="360"
                 />
                 <p class="dop-info text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -401,9 +435,14 @@
             <li class="mini-item card">
               <div class="dop-info-conteiner">
                 <img
+                  srcset="
+                    ./images/portfolio-img/student-photo.jpg        360w,
+                    ./images/portfolio-img/student-photo-tablet.jpg 356w,
+                    ./images/portfolio-img/student-photo-mobile.jpg 288w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   src="./images/portfolio-img/student-photo.jpg"
                   alt="student photo"
-                  width="360"
                 />
                 <p class="dop-info text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -484,7 +523,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="hero-form-container">
         <button class="hero-clear-button" type="button">
           <svg
